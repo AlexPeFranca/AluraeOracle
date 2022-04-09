@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script>
+    function pularLinha(){
+        document.write("<br>");
+    }
+
+    function mostrar(mensagen){
+        document.write("Desde quando os portuguêses chegaram ao Brasil são: " +mensagen + " gerações");
+        pularLinha()
+    }
+
+var idadeMediaQuandoTemFilhos = 28;
+var anoAtual = 2022;
+var quantidadeDeGeracoes = (anoAtual-1500)/idadeMediaQuandoTemFilhos;
+
+mostrar(Math.round(quantidadeDeGeracoes))
+
+    
+</script>
