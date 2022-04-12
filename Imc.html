@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <script>
     function pulaLinha() {
-        document.write("<br>");
+        document.write("<br><hr><br>");
     }
 
     function mostra(frase) {
@@ -11,10 +11,27 @@
 
     function calculaImc(altura, peso) {
 
-        var imc = peso / (altura * altura);
-        return imc;
+       return peso / (altura * altura);
+       
     }
 
-    var imcCalculado = calculaImc(1.77, 75);
-    mostra("O meu IMC é : " + Math.round(imcCalculado));
+    var nome = prompt("Digite seu nome")
+    var alturaInformada = prompt(nome +" informe sua altura");
+    var pesoInformado = prompt(nome + " informe seu peso");
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    mostra(nome +" o seu IMC calculado é " + Math.round(imc));
+
+    if (imc < 18.5) {
+        mostra("Seu IMC está abaixo do recomendado");
+    }
+    if (imc > 35) {
+        mostra("Seu IMC está acima do recomendado");
+    }
+    if(imc >= 18.5 && imc <= 35){
+       
+            mostra("Seu IMC está excelente!");
+        }
+
+
 </script>

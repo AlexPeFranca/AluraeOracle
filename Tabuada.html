@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    function pulaLinha(){
+
+        document.write("<br>")
+    }
+
+    function mostra(frase){
+
+        document.write(frase)
+        pulaLinha()
+    }
+    
+     var multi = parseInt(prompt("Digite um numero para fazer sua tabuada de multiplicação."))
+     
+     for ( var multiplicador = 1; multiplicador <= 10; multiplicador ++) {
+         
+        mostra(multi + "x" + multiplicador + "= " + multiplicador * multi)
+}
+
+</script>
